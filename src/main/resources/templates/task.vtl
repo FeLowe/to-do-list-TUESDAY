@@ -1,0 +1,8 @@
+<h1>$task.getDescription()</h1>
+
+<a href="/categories/$task.getCategoryId()">Go to task category</a>
+
+<form action="/delete" method="post">
+  <label for="deleteTask">Delete task</label>
+  <input type="submit" name="deleteTask" value="$task.getId()">
+</form>
